@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title></title>
+  </head>
+  <style>
+
+
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  .container {
+      padding: 16px;
+      background-color: white;
+  }
+
+
+  input[type=text], input[type=password] {
+      width: 280px;
+      padding: 13px;
+      margin: 5px 0 22px 10px;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+  }
+  .boxform
+  {
+    border: 2px solid #ccc;
+    padding: 10px;
+
+  }
+
+  input[type=text]:focus, input[type=password]:focus {
+      background-color: lightgrey;
+      outline: none;
+  }
+
+  .registerbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100px;
+      opacity: 0.9;
+  }
+
+  .registerbtn:hover {
+      opacity: 2;
+  }
+
+
+
+  .signin {
+      background-color: #f1f1f1;
+      text-align: center;
+  }
+  </style>
+
+
+  <body>
+
+
+  <div class="container">
+  <row>
+    <div class="col-md-4">
+
+    </div>
+
+
+
+
+
+  <br><br> <div class="col-md-4 col-sm-offset-4 boxform"><br>
+  
+    <form method="POST" action="/send" >
+    <label for="name"><b>NAME</b></label><br>
+    <input type="text" autocomplete="off" placeholder="Enter Name" name="name" required><br>
+
+
+    <label for="email"><b>EMAIL</b></label><br>
+    <input type="text" autocomplete="off" placeholder="Enter Email" name="email" required><br>
+
+
+    <label for="psw"><b>PASSWORD</b></label><br>
+    <input type="password" autocomplete="off" placeholder="Enter Password" name="psw" required><br>
+
+
+    <label for="psw-repeat"><b>CONFORM PASSWORD</b></label><br>
+    <input type="password" autocomplete="off" placeholder="Repeat Password" name="psw-repeat" required><br>
+
+
+    <button type="submit" class="registerbtn">Register</button>
+
+    <p>Already have an account? <a href="#" class="signin">Sign in</a>.</p>
+
+</form>
+</div>
+
+  <div class="col-md-4">
+
+  </div>
+</div>
+</row>
+
+  </body>
+</html>
